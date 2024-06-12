@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+header {
+  background: url(./image/photos/children-5833685_1280.jpg) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+ul a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: large;
+}
+
+.container-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  text-decoration: none;
+}
+
+#logo img {
+  width: 100px;
+  height: 83px;
+  margin: 15px 35px 0 0;
+}
+
+#don {
+  background: #f3ca8e;
+  padding: 12px 18px;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+#imagePrincipale {
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#bouton {
+  text-align: center;
+  position: relative;
+  bottom: 190px;
+  background: #f3ca8e;
+  padding: 12px 18px;
+  width: 145px;
+}
+#bouton a {
+  text-decoration: none;
+  color: #111;
+}
+
+#imagePrincipale h3 {
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+/* **************************************************QUISOMMENOUS******************************************************* */
+
+#about {
+  background-color: #dcdcce;
+  height: 70vh;
+  display: flex;
+}
+.imglocal {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.imglocal img {
+  height: 90%;
+  padding-left: 110px;
+  border-radius: 10px;
+  opacity: 1;
+}
+#TextIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 50px 0 0;
+  width: 40%;
+}
+#TextIntro h2 {
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+.minititle {
+  font-weight: bold;
+}
+#TextIntro p {
+  font-size: 1.2rem;
+  width: 40%;
+}
+
+/* *******************************************************ACTIONS********************************************* */
+
+#actions {
+  background-color: #c2a375;
+  height: 210vh;
+}
+
+.Texteprincipal2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.Texteprincipal2 h2 {
+  padding: 30px 0 0 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+#actions h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.matxt span {
+  font-weight: bold;
+}
+
+.txt-present span{
+  font-weight: 500;
+}
+
+#aides h3 {
+  margin: 30px auto;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+}
+.matxt {
+  text-decoration: underline;
+}
+/* ******************************************GALERY************************************************* */
+.gallery {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 65px 0 65px;
+}
+
+.gallery li {
+  list-style-type: none;
+  height: 600px;
+  flex-grow: 1;
+}
+.gallery img,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery2 {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 5px 65px 0 65px;
+}
+
+.gallery2 li {
+  list-style-type: none;
+  height: 600px;
+  flex-grow: 1;
+}
+.gallery2 img,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#contact {
+  background-color: #e9d7ce;
+  height: 50vh;
+}
+#contact h2 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 50px 0 25px 0;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 50px 30px;
+}
+
+.container-contact p{
+  font-size: 1.4rem;
+}
+
+.container-contact span {
+  text-decoration: underline;
+}
+
+/* .container-txt p {
+  font-size: 1.2rem;
+  width: 20%;
+} */
+
+footer {
+  background-color: #8f8672;
+  color: whitesmoke;
+  height: 30vh;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 30px 0;
+}
+
+.container-site {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Copyrightandicons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+
+#Copyright {
+  width: 50%;
+  text-align: left;
+  color: whitesmoke;
+}
+
+#icons {
+  width: 50%;
+  text-align:right;
+}
+
+#icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
