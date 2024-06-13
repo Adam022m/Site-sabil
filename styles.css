@@ -15,6 +15,7 @@ header {
   background-size: cover;
 }
 
+
 ul {
   list-style: none;
   display: flex;
@@ -246,19 +247,48 @@ footer {
 }
 
 footer h2 {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
-.container-site {
+.container-container {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 60px;
 }
 
+.container-container a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.container-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.container-missions {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.container-sociaux {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+#trait {
+  height: 1px;
+  width: 75%;
+  background-color: whitesmoke;
+  margin: 30px auto;
+}
 .Copyrightandicons {
   display: flex;
   margin-bottom: 20px;
-  padding: 0 10%;
+  padding: 20px 10%;
 }
 
 #Copyright {
