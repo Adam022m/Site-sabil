@@ -11,6 +11,9 @@
 html {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   background: url(./image/photos/children-5833685_1280.jpg) no-repeat;
   height: 100vh;
@@ -28,6 +31,10 @@ ul {
   background-color: #dcdcce;
   position: fixed;
   opacity: 0.8;
+  overflow: hidden;
+  background-color: #dcdcce;
+  position: fixed;
+  opacity: 0.8;
 }
 
 ul a {
@@ -35,9 +42,12 @@ ul a {
   color: #111;
   font-weight: 500;
   font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 ul a:hover {
+  color: rgb(167, 143, 143);
+  transition: 0.4s;
   color: rgb(167, 143, 143);
   transition: 0.4s;
 }
@@ -78,6 +88,8 @@ h1 {
 }
 #home {
   padding-top: 120px;
+#home {
+  padding-top: 120px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -85,11 +97,13 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
+  width: 100%;
 }
 
 #bouton {
   text-align: center;
   position: relative;
+  bottom: 70px;
   bottom: 70px;
   background: #f3ca8e;
   padding: 12px 18px;
@@ -100,6 +114,7 @@ h1 {
   color: #111;
 }
 
+#home h3 {
 #home h3 {
   font-style: italic;
   font-weight: normal;
@@ -250,6 +265,7 @@ video {
 .container-contact {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0 50px 30px;
   padding: 20px 0 50px 30px;
 }
 
