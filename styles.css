@@ -9,9 +9,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
-}
-html {
+  height: 100%;
   scroll-behavior: smooth;
 }
 header {
@@ -21,39 +19,34 @@ header {
   background-size: cover;
 }
 
-ul {
+.main-navlinks {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   overflow: hidden;
   background-color: #dcdcce;
   position: fixed;
   opacity: 0.8;
-  overflow: hidden;
-  background-color: #dcdcce;
-  position: fixed;
-  opacity: 0.8;
+  position: relative;
 }
 
-ul a {
+.main-navlinks a {
   text-decoration: none;
   color: #111;
   font-weight: 500;
   font-size: 0.9rem;
-  font-size: 0.9rem;
 }
 
-ul a:hover {
-  color: rgb(167, 143, 143);
-  transition: 0.4s;
+.main-navlinks a:hover {
   color: rgb(167, 143, 143);
   transition: 0.4s;
 }
 
 .container-links {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 25px;
   text-decoration: none;
@@ -68,6 +61,7 @@ ul a:hover {
 #don {
   background: #f3ca8e;
   padding: 12px 18px;
+  margin: 15px auto;
 }
 
 #don a:hover {
@@ -88,8 +82,6 @@ h1 {
 }
 #home {
   padding-top: 120px;
-#home {
-  padding-top: 120px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -97,13 +89,11 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
-  width: 100%;
 }
 
 #bouton {
   text-align: center;
   position: relative;
-  bottom: 70px;
   bottom: 70px;
   background: #f3ca8e;
   padding: 12px 18px;
@@ -114,7 +104,6 @@ h1 {
   color: #111;
 }
 
-#home h3 {
 #home h3 {
   font-style: italic;
   font-weight: normal;
@@ -266,7 +255,6 @@ video {
   display: flex;
   justify-content: space-between;
   padding: 20px 0 50px 30px;
-  padding: 20px 0 50px 30px;
 }
 
 .container-contact p {
@@ -361,4 +349,46 @@ footer h2 {
 #icons a:hover {
   transform: scale(1.5);
   transition: 0.3s;
+}
+
+/* ***************RESPONSIVE********************* */
+@media (max-width: 990px) {
+  #don,
+  .container-links {
+    display: none;
+  }
+  #logo {
+    display: block;
+  }
+  .burger-menu {
+    display: block;
+    color: #000;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 22px;
+    height: 2px;
+    background-color: currentColor;
+    right: 50px;
+  }
+
+  .burger-menu:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background-color: currentColor;
+  }
+
+  .burger-menu:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background-color: currentColor;
+  }
 }
