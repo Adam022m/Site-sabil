@@ -376,13 +376,15 @@ footer h2 {
   }
 
   .donate-button {
-    display: block;
+    display: flex;
     order: 3;
+    margin: auto 15px;
   }
 
-  .donate-button img {
-    width: 30px;
-    height: 30px;
+  img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
   }
 
   .hamburger {
