@@ -71,6 +71,10 @@ header {
   display: none;
 }
 
+.donate-button {
+  display: none;
+}
+
 /* ***********HOME********** */
 
 h1 {
@@ -351,9 +355,10 @@ footer h2 {
 @media (max-width: 990px) {
   .main-navlinks {
     position: relative;
+    overflow: visible;
   }
   #logo {
-    margin: 10px auto 10px 35px;
+    margin: 10px auto;
   }
   #logo img {
     width: 58px;
@@ -362,6 +367,24 @@ footer h2 {
   #don {
     display: none;
   }
+  #logo {
+    order: 2;
+  }
+
+  .container-links {
+    order: 1;
+  }
+
+  .donate-button {
+    display: block;
+    order: 3;
+  }
+
+  .donate-button img {
+    width: 30px;
+    height: 30px;
+  }
+
   .hamburger {
     width: 20px;
     height: 20px;
@@ -398,6 +421,14 @@ footer h2 {
   .container-links {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    padding: 15px 50px 15px 20px;
+    background-color: #ffffff;
     position: absolute;
   }
 }
