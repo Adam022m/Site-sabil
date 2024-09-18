@@ -456,7 +456,7 @@ footer h2 {
     background-color: #fafafa;
     position: absolute;
     transform: translate(-100%);
-    transition: transform 0.3s ease-out;
+    /* transition: transform 0.3s ease-out; On a mis la transition en JavaScript, elle est donc inutile ici  */
   }
 
   .container-links.open {
