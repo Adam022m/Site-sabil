@@ -31,7 +31,7 @@ header {
   text-decoration: none;
   color: #111;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .main-navlinks a:hover {
@@ -351,7 +351,7 @@ footer h2 {
   transition: 0.3s;
 }
 
-/* ***************RESPONSIVE********************* */
+/* ***************RESPONSIVE***************************************************************************** */
 @media (max-width: 990px) {
   .main-navlinks {
     position: relative;
@@ -396,7 +396,7 @@ footer h2 {
     background: #dcdcce;
     align-items: center;
     position: relative;
-    margin: auto 35px;
+    margin: auto 34px;
   }
 
   .hamburger span {
@@ -432,13 +432,13 @@ footer h2 {
     position: absolute;
     /* top: 4px; */
     left: 10px;
-    margin: auto 35px auto 25px;
+    margin: auto 34px;
   }
 
   .close-button:before,
   .close-button:after {
     position: absolute;
-    left: 10px;
+    /* left: 10px; */
     content: " ";
     height: 23px;
     width: 2px;
@@ -455,10 +455,14 @@ footer h2 {
     display: block;
   }
 
+  .main-navlinks {
+    background-color: #e9ecf0;
+  }
   .main-navlinks a {
     font-size: large;
     position: relative;
   }
+
   .container-links {
     display: flex;
     flex-direction: column;
@@ -469,7 +473,7 @@ footer h2 {
     width: 100%;
     top: 100%;
     padding: 60px 50px 15px 30px;
-    background-color: #fafafa;
+    background-color: #e9ecf0;
     position: absolute;
     transform: translate(-100%);
     /* transition: transform 0.3s ease-out; On a mis la transition en JavaScript, elle est donc inutile ici  */
@@ -491,12 +495,41 @@ footer h2 {
   .container-links a:hover {
     color: #8f8672;
   }
-}
 
-h1 {
-  font-size: 2.5rem;
-}
+  body.navbar-open {
+    overflow: hidden;
+    pointer-events: none;
+  }
+  /* Cette ligne permet d'empêcher le scroll ainsi que le click sur toute la page quand la navbar est ouverte */
+  /* body.navbar-open > *:not(.main-navlinks) {
+    pointer-events: none;
+  } */
+  /* Cette ligne permet de spécifier que la navbar est exclue de cette interdiction du click (en théorie même si je n'en vois pas les résultats)*/
+  .main-navlinks.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  /* Cette ligne permet de clicker sur la navbar et de passer son opacité à un lorsqu'elle est ouverte*/
 
-#home h3 {
-  font-size: 1.5rem;
+  /* *****************************HOME-RESPONSIVE*********************************************** */
+  #home h1 {
+    font-size: 2.5rem;
+  }
+  #home h3 {
+    font-size: 1.5rem;
+  }
+
+  #textprincipal {
+    margin-top: -50px;
+  }
+
+  body.navbar-open #bouton {
+    z-index: -1;
+  }
+  /* Cette ligne ci-dessus permet de passer en arrière-plan le bouton "En savoir plus" durant l'affichage de la navBar */
+
+  /* *****************ABOUT-RESPONSIVE************************************ */
+  #TextIntro {
+    width: 70%;
+  }
 }
