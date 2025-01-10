@@ -166,6 +166,12 @@ h3 {
 
 .imglocal {
   width: 70%;
+  background-color: #dcdcce;
+  height: 70vh;
+  display: flex;
+}
+.imglocal {
+  width: 60%;
   display: flex;
   align-items: center;
 }
@@ -182,7 +188,7 @@ h3 {
   justify-content: center;
   gap: 15px;
   padding: 0 50px 0 0;
-  width: 70%;
+  width: 40%;
 }
 #TextIntro h2 {
   text-decoration: underline;
