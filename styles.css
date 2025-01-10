@@ -165,21 +165,17 @@ h3 {
 }
 
 .imglocal {
-  width: 70%;
-  background-color: #dcdcce;
-  height: 70vh;
-  display: flex;
-}
-.imglocal {
-  width: 60%;
+  padding-top: 40px;
+  padding-left: 110px;
+  /* width: 70%; */
   display: flex;
   align-items: center;
 }
 .imglocal img {
-  height: 90%;
-  padding-left: 110px;
+  height: 100%;
+  /* padding-left: 110px; */
   border-radius: 10px;
-  opacity: 1;
+  /* opacity: 1; */
 }
 #TextIntro {
   display: flex;
@@ -188,7 +184,7 @@ h3 {
   justify-content: center;
   gap: 15px;
   padding: 0 50px 0 0;
-  width: 40%;
+  width: 70%;
 }
 #TextIntro h2 {
   text-decoration: underline;
@@ -206,7 +202,7 @@ h3 {
 
 #actions {
   background-color: #4bcca5;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .Texteprincipal2 {
