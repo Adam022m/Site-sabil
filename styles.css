@@ -160,7 +160,7 @@ h3 {
 
 #about {
   /* background-color: #e9ecf0; */
-  height: 70vh;
+  height: 80vh;
   display: flex;
 }
 
@@ -195,7 +195,7 @@ h3 {
   font-weight: bold;
 }
 #TextIntro p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 40%;
 }
 
@@ -338,7 +338,7 @@ video {
 }
 
 /************FOOTER********/
-* footer {
+footer {
   background-color: #8f8672;
   color: whitesmoke;
   text-align: center;

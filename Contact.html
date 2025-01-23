@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-actions.css">
-    <title>Nos actions</title>
+    <link rel="stylesheet" href="styles-contact.css">
+    <title>Contact</title>
 </head>
 <body>
+
     <header>
+
         <nav>
             <ul class="main-navlinks">
                 <li id="logo"><a href="./index.html"><img src="./image/logo/logo sabil5.png" alt="logo"></a> </li>
                 <div class="container-links">
                     <!-- <li><a href="index.html">Accueil</a></li> -->
-                    <li><a href="./about.html">Notre histoire</a></li>
-                    <li><a href="actions.html">Nos actions</a></li>
+                    <li><a href="./about.html" target="_blank">Notre histoire</a></li>
+                    <li><a href="actions.html"target="_blank">Nos actions</a></li>
                     <li><a href="./Contact.html">Contact</a></li>
                 </div>
                 <li id="don"><a href="#" target="_blank">Faire un don</a></li>
@@ -30,42 +32,36 @@
             </ul>
             
         </nav>
-        <div class="Intro">
-            <h2>
-            Les actions de l'association
+
+    </header> 
+    
+    <div class="pre-form">
+        <h2>
+            Formulaire de contact 
         </h2>
         <p>
-            Notre association agit chaque jour pour apporter un soutien concret et solidaire aux personnes les plus vulnérables. Face à la précarité qui touche de nombreuses familles, étudiants, personnes sans-abri et isolées, nous avons développé plusieurs actions essentielles.
+            <span>Vous avez une question, une suggestion ou souhaitez simplement entrer en contact avec nous ?</span>
+            <br>
+            Notre équipe est à votre écoute ! Remplissez le formulaire ci-dessous, et nous vous répondrons dans les plus brefs délais.
+            <br>
+            Que ce soit pour rejoindre notre association, proposer un partenariat ou obtenir des informations, n'hésitez pas à nous écrire.
         </p>
-        </div>
-        
+    </div>
 
-    </header>
-    
 
-    <section class="actions-container">
-        <div class="card">
-            <img src="./image/photos/slums-2635238_1280.jpg" alt="colis alimentaire">
-            <div class="card-content">
-                <h3>Denrées alimentaire</h3>
-                <p>Nous préparons et distribuons des colis alimentaires adaptés aux besoins spécifiques des bénéficiaires. Chaque colis est composé de produits de première nécessité : aliments de base, produits frais, conserves, et parfois des gourmandises pour offrir un peu de réconfort. Grâce à nos partenaires et aux dons, nous veillons à garantir la diversité et la qualité des denrées distribuées.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./image/photos/hand-disinfection-4954840_1280.jpg" alt="colis alimentaire">
-            <div class="card-content">
-                <h3>Kit d'hygiène</h3>
-                <p class="reverse">La dignité passe aussi par l'accès à l'hygiène. Nos colis contiennent des produits essentiels tels que du savon, du shampoing, des protections périodiques, des brosses à dents, du dentifrice, et d'autres articles indispensables au quotidien. Ces kits visent à redonner confiance et estime de soi aux bénéficiaires.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./image/photos/vetements.jpg" alt="colis alimentaire">
-            <div class="card-content">
-                <h3>Don de vêtement</h3>
-                <p>Nos équipes de bénévoles organisent régulièrement des maraudes pour aller à la rencontre des personnes sans domicile fixe. Lors de ces tournées, nous distribuons des repas chauds, des boissons, des couvertures et des vêtements adaptés aux saisons. Mais plus qu’une aide matérielle, ces maraudes sont un moment d’échange, d’écoute et de partage, offrant une présence humaine essentielle à ceux qui se sentent isolés.</p>
-            </div>
-        </div>
+    <section class="form-contact">
+        <form action="post">
+            <input type="text" id="prenom" name="prenom" value="" placeholder="Entrez votre prénom">
+            <input type="text" id="nom" name="nom" value="" placeholder="Entrez votre nom">
+            <input type="text" id="mail" name="mail" value="" placeholder="Tapez votre adresse e-mail">
+            <input type="text" id="phone" name="phone" value="" placeholder="Entrez votre numéro de téléphone">
+            <textarea name="message" id="message" placeholder="Entrez votre message"></textarea>
+            <br>
+            <button>Envoyer</button>
+        </form>
     </section>
+
+
 
     <footer>
         <h2>Nos informations</h2>
@@ -112,6 +108,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>

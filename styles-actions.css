@@ -28,14 +28,14 @@ header {
   justify-content: center;
   width: 100%;
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: #5cd3c2;
   position: fixed;
   box-shadow: inset 0px -1px 0px #c5c5c6;
 }
 
 .container-links a {
   text-decoration: none;
-  color: #111;
+  color: #172A3A;
   font-weight: 500;
   font-size: 1.1rem;
   display: inline-block;
@@ -77,14 +77,15 @@ header {
 }
 
 #don {
-  background: #00DD00;
+  background: #172A3A;
   padding-top: 8px;
   margin: 15px 40px 15px auto;
+  border-radius: 10px;
 }
 
 #don a {
   text-decoration: none;
-  color :#111;
+  color :#BCD4DE;
   font-family: 1.1rem;
 }
 
@@ -101,8 +102,156 @@ header {
   display: none;
 }
 
-h2 {
-  font-size: 1.9rem;
-  padding-top: 150px;
+.Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #172A3A;
+  /* background: url(./image/photos/petite\ fille\ grand\ format.jpg) no-repeat center ; */
+  /* object-fit: cover;  */
+  width: 100%;
+  height: 500px;
+}
+.Intro h2{
+    font-size: 1.9rem;
+    padding-top: 120px;
+    text-align: center;
+    color: #BCD4DE;
+  }
+  
+.Intro p {
+    margin: 20px;
+    font-size: 1.2rem;
+    width: 50%;
+    text-align: center;
+    color: #BCD4DE;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Empêche le débordement */
+  }
+
+  .card:nth-child(even) {
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments pour les cartes paires */
+}
+  .card h3 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    text-align:center;
+  }
+
+  .card p {
+    font-size: 1.3rem;
+    text-align: right;
+    margin: 20px;
+  }
+
+  .reverse {
+    text-align: start;
+  }
+
+  .card img {
+    margin: 30px;
+    height: 20%;
+    width: 40%;
+    border-radius: 10px;
+  }
+  .card-content {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+
+  }
+  
+
+/* ************************FOOTER*********************** */
+
+
+  footer {
+  background-color: #8f8672;
+  color: whitesmoke;
   text-align: center;
+}
+
+footer h2 {
+  padding: 20px 0;
+}
+
+.container-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.container-container span {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.container-container a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.container-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.container-missions {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.container-sociaux {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+#trait {
+  height: 1px;
+  width: 75%;
+  background-color: whitesmoke;
+  margin: 10px auto;
+}
+.Copyrightandicons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px 10%;
+}
+
+#Copyright {
+  width: 50%;
+  text-align: left;
+  color: whitesmoke;
+}
+
+#Copyright span {
+  font-size: 1.1rem;
+}
+
+#icons {
+  width: 50%;
+  text-align: right;
+}
+
+#icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.4rem;
+  color: whitesmoke;
+}
+
+#icons a:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
 }
