@@ -16,7 +16,7 @@
   
   body {
     height: 100vh;
-    background-color: #f4f4ff;
+    background-color: #cddfd0;
   }
   header {
     width: 100%;
@@ -28,7 +28,7 @@
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    background-color: #A1EF8B;
+    background-color: #fff;
     position: fixed;
     box-shadow: inset 0px -1px 0px #c5c5c6;
   }
@@ -78,15 +78,17 @@
   
   #don {
     background: #172A3A;
-    padding-top: 8px;
     margin: 15px 40px 15px auto;
-    border-radius: 10px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
   }
   
   #don a {
     text-decoration: none;
     color :#BCD4DE;
-    font-family: 1.1rem;
+    font-size: 1rem;
   }
   
   #don a:hover {
@@ -164,7 +166,7 @@ button {
 
 
   footer {
-    background-color: #8f8672;
+    background-color: #1f4261;
     color: whitesmoke;
     text-align: center;
   }

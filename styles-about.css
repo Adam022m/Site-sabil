@@ -77,15 +77,18 @@ header {
 }
 
 #don {
-  background: #00DD00;
-  padding-top: 8px;
+  background: #172A3A;
   margin: 15px 40px 15px auto;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 #don a {
   text-decoration: none;
-  color :#111;
-  font-family: 1.1rem;
+  color :#BCD4DE;
+  font-size: 1rem;
 }
 
 #don a:hover {
