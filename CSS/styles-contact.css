@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: #f4f4ff;
+}
+header {
+  width: 100%;
+}
+
+.main-navlinks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  box-shadow: inset 0px -1px 0px #c5c5c6;
+}
+
+.container-links {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  text-decoration: none;
+}
+
+.container-links a {
+  text-decoration: none;
+  color: #172a3a;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.container-links a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+.container-links a:hover::after {
+  transform: scaleX(1);
+}
+
+#logo {
+  margin: 15px auto 15px 50px;
+}
+#logo img {
+  display: flex;
+  width: 65px;
+  height: 55px;
+}
+
+#don {
+  background: #172a3a;
+  margin: 15px 40px 15px auto;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#don a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#don a:hover {
+  color: #fafafa;
+  transition: 0.4s;
+}
+
+.hamburger {
+  display: none;
+}
+
+.donate-button {
+  display: none;
+}
+
+/* ************************FORMULAIRE***********************/
+
+.pre-form {
+  padding-top: 130px;
+  text-align: center;
+}
+
+.pre-form p {
+  margin: 15px auto 0 auto;
+  width: 50%;
+  /* text-align: center; */
+  font-size: 1.2rem;
+  text-align: start;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.pre-form span:first-of-type {
+  text-decoration: underline;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.pre-form span {
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+
+.form-contact {
+  text-align: center;
+}
+
+form {
+  max-width: 900px;
+  text-align: center;
+  margin: 90px auto 130px auto;
+}
+
+input,
+textarea,
+form button {
+  border: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 130px;
+}
+
+form button {
+  color: #fafafa;
+  font-size: 1.2rem;
+  background-color: #172a3a;
+  margin-bottom: 20px;
+}
+
+form p span {
+  text-decoration: 2px red underline;
+  font-weight: 600;
+}
+/* ************************FOOTER*********************** */
+
+footer {
+  background-color: #1f4261;
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 20px 0;
+}
+
+.container-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 250px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.container-container span {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.container-container a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.container-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container-missions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container-sociaux {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#trait {
+  height: 1px;
+  width: 75%;
+  background-color: whitesmoke;
+  margin: 10px auto;
+}
+.Copyrightandicons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px 10%;
+}
+
+#Copyright {
+  width: 50%;
+  text-align: left;
+  color: whitesmoke;
+}
+
+#Copyright span {
+  font-size: 1.1rem;
+}
+
+#icons {
+  width: 50%;
+  text-align: right;
+}
+
+#icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.4rem;
+  color: whitesmoke;
+}
+
+#icons a:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+/* *****************************************RESPONSIVE***************************************************************************** */
+@media (max-width: 1024px) {
+  .main-navlinks {
+    position: relative;
+    overflow: visible;
+    background-color: #fff;
+  }
+
+  .main-navlinks a {
+    font-size: large;
+    position: relative;
+  }
+
+  #logo {
+    margin: 10px auto;
+  }
+  #logo img {
+    width: 70px;
+    height: 60px;
+  }
+  #don {
+    display: none;
+  }
+  #logo {
+    order: 2;
+  }
+
+  .container-links {
+    order: 1;
+  }
+
+  .donate-button {
+    display: flex;
+    order: 3;
+    margin: auto 15px;
+  }
+
+  .donate-button img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto 34px;
+  }
+
+  .hamburger img {
+    height: 40px;
+    width: 50px;
+  }
+
+  /* Code pour rendre les span en forme de menu hamburger  */
+  /* .hamburger span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #333;
+      position: absolute;
+      pointer-events: none;
+      transition: opacity 0.3s 0.15s ease-out;
+    }
+    .hamburger span:nth-child(1),
+    .hamburger span:nth-child(3) {
+      transition: transform 0.3s ease-out;
+    }
+  
+    .hamburger span:nth-child(1) {
+      transform: translateY(7px);
+    }
+    .hamburger span:nth-child(3) {
+      transform: translateY(-7px);
+    } */
+
+  .hamburger.open {
+    display: none;
+  }
+  .close-button {
+    height: 20px;
+    width: 20px;
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    /* top: 4px; */
+    left: 10px;
+    margin: auto 34px;
+  }
+
+  .close-button:before,
+  .close-button:after {
+    position: absolute;
+    /* left: 10px; */
+    content: " ";
+    height: 23px;
+    width: 2px;
+    background-color: #000000;
+  }
+  .close-button:before {
+    transform: rotate(45deg);
+  }
+  .close-button:after {
+    transform: rotate(-45deg);
+  }
+
+  .close-button.open {
+    display: block;
+  }
+
+  .container-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 90px;
+    height: 100vh;
+    width: 100%;
+    top: 100%;
+    padding: 60px 50px 15px 30px;
+    background-color: #e9ecf0;
+    position: absolute;
+    transform: translate(-100%);
+    /* transition: transform 0.3s ease-out; On a mis la transition en JavaScript, elle est donc inutile ici  */
+  }
+
+  .container-links.open {
+    transform: translate(0%);
+  }
+  .container-links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    width: 870px;
+    height: 1px;
+    background-color: #333;
+  }
+
+  .container-links a:hover {
+    color: #8f8672;
+  }
+
+  body.navbar-open {
+    overflow: hidden;
+    pointer-events: none;
+  }
+  /* Cette ligne permet d'empêcher le scroll ainsi que le click sur toute la page quand la navbar est ouverte */
+  /* body.navbar-open > *:not(.main-navlinks) {
+      pointer-events: none;
+    } */
+  /* Cette ligne permet de spécifier que la navbar est exclue de cette interdiction du click (en théorie même si je n'en vois pas les résultats)*/
+  .main-navlinks.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  /* Cette ligne permet de clicker sur la navbar et de passer son opacité à un lorsqu'elle est ouverte*/
+
+  body.navbar-open #bouton {
+    z-index: -1;
+  }
+  /* Cette ligne ci-dessus permet de passer en arrière-plan le bouton "En savoir plus" durant l'affichage de la navBar */
+
+
+/* ***********************FORM-RESPONSIVE**************************** */
+
+.pre-form {
+  padding-top: 70px;
+}
+
+.pre-form span:first-of-type {
+  margin-bottom: 10px;
+}
+
+.pre-form span {
+  margin-bottom: 4px;
+}
+
+
+
+.pre-form p {
+  margin: 15px auto 0 auto;
+  padding: 0;
+}
+
+form {
+  margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* **********************************FOOTER-RESPONSIVE************************************** */
+
+  footer h2 {
+    font-weight: 600;
+  }
+
+  .container-container {
+    padding-top: 50px;
+    gap: 120px;
+  }
+
+  .container-container span {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .container-container a {
+    font-size: 1rem;
+  }
+
+  #trait {
+    width: 90%;
+  }
+}

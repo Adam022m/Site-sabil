@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-contact.css">
+    <link rel="stylesheet" href="./CSS/styles-contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
     <title>Contact</title>
 </head>
 <body>
@@ -21,9 +23,7 @@
                 </div>
                 <li id="don"><a href="#" target="_blank">Faire un don</a></li>
                 <button type="button" class="hamburger" aria-label="Toggle Navigation" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <img src="./image/photos/burger-menu-svgrepo-com.svg" alt="Bouton du menu">
                 </button>
                 <a href="" class="close-button"></a>
                 <span class="donate-button">
@@ -42,29 +42,29 @@
         <p>
             <span>Vous avez une question, une suggestion ou souhaitez simplement entrer en contact avec nous ?</span>
             <br>
-            Notre équipe est à votre écoute ! Remplissez le formulaire ci-dessous, et nous vous répondrons dans les plus brefs délais.
+            <span>Notre équipe est à votre écoute ! Remplissez le formulaire ci-dessous, et nous vous répondrons dans les plus brefs délais.</span>
             <br>
-            Que ce soit pour rejoindre notre association, proposer un partenariat ou obtenir des informations, n'hésitez pas à nous écrire.
+            <span>Que ce soit pour rejoindre notre association, proposer un partenariat ou obtenir des informations, n'hésitez pas à nous écrire.</span>
         </p>
     </div>
 
 
     <section class="form-contact">
         <form action="post">
-            <input type="text" id="prenom" name="prenom" value="" placeholder="Entrez votre prénom">
-            <input type="text" id="nom" name="nom" value="" placeholder="Entrez votre nom">
-            <input type="text" id="mail" name="mail" value="" placeholder="Tapez votre adresse e-mail">
-            <input type="text" id="phone" name="phone" value="" placeholder="Entrez votre numéro de téléphone">
-            <textarea name="message" id="message" placeholder="Entrez votre message"></textarea>
+            <input type="text" id="prenom" name="prenom" value="" placeholder="Entrez votre prénom*">
+            <input type="text" id="nom" name="nom" value="" placeholder="Entrez votre nom*">
+            <input type="text" id="mail" name="mail" value="" placeholder="Tapez votre adresse e-mail*">
+            <input type="text" id="phone" name="phone" value="" placeholder="Entrez votre numéro de téléphone (facultatif)">
+            <textarea name="message" id="message" placeholder="Entrez votre message*"></textarea>
             <br>
             <button>Envoyer</button>
+            <p>Les champs portant une * doivent être <span>obligatoirement remplis</span></p>
         </form>
     </section>
 
 
 
     <footer>
-        <h2>Nos informations</h2>
         <div class="container-container">
             <div class="container-site">
                 <span>Le site</span>
@@ -108,5 +108,7 @@
             </div>
         </div>
     </footer>
+        <script src="script.js"></script>
+
 </body>
 </html>

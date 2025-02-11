@@ -25,19 +25,26 @@ header {
 .main-navlinks {
   list-style: none;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   width: 100%;
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: #fff;
   position: fixed;
   box-shadow: inset 0px -1px 0px #c5c5c6;
 }
 
+.container-links {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  text-decoration: none;
+}
+
 .container-links a {
   text-decoration: none;
-  color: #111;
+  color: #172A3A;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: inline-block;
   position: relative;
 }
@@ -59,13 +66,6 @@ header {
   transform: scaleX(1);
 }
 
-.container-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  text-decoration: none;
-}
 
 #logo {
   margin: 15px auto 15px 50px;
@@ -87,8 +87,7 @@ header {
 
 #don a {
   text-decoration: none;
-  color :#BCD4DE;
-  font-size: 1rem;
+  color :#fff;
 }
 
 #don a:hover {
@@ -104,211 +103,126 @@ header {
   display: none;
 }
 
-h1 {
-  font-size: 2.8rem;
-}
-
-
-#about h1 {
-  font-weight: 500;
-  font-size: 2.3rem;
-  /* text-decoration:underline; */
-  /* font-style: italic; */
-  padding-top: 180px;
-  padding-left: 300px;
-  width: 50%;
-}
-
-#about h1 span {
-  text-decoration: underline;
-}
-/* ***********HOME********** */
-
-/* h1 {
-  font-size: 3rem;
-  font-weight: 500;
-} */
-/* #home {
-  background: url(./image/photos/children-5833685_1280.jpg) no-repeat;
-  background-size: cover;
-  height: 100vh;
-  padding-top: 120px;
-  text-align: center;
+/* ********************************ACTIONS-CONTAINER************************** */
+.intro-container {
+  width: 100%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-} */
-
-/* #bouton {
-  text-align: center;
-  position: relative;
-  bottom: 70px;
-  background: #f3ca8e;
-  padding: 12px 18px;
-  width: 145px;
-} */
-/* #bouton a {
-  text-decoration: none;
-  color: #111;
-} */
-
-/* #home h3 {
-  font-style: italic;
-  font-weight: normal;
-  text-decoration: underline;
-  font-size: 1.5rem;
-} */
-
-/***********ABOUT********* */
-
-#about {
-  background-image: linear-gradient(130deg, #1786B4 0%, #48B973 89%);;
-  height: 100%;
-  /* display: flex; */
+  gap: 20px;
+  background-image: linear-gradient(130deg, #1786B4 0%, #48B973 89%);
   color: #fff;
 }
 
-.presentation {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+.intro-container h1{
+    font-size: 2.3rem;
+    font-weight: 500;
+    padding-top: 160px;
+    margin-bottom: 20px;
+    margin-left: 270px;
+    width: 700px;
+  }
+
+  .intro-container h1 span {
+    text-decoration: underline;
+  }
+ 
+.intro-details {
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
 }
-.imglocal {
-  /* width: 70%; */
-  display: flex;
-  align-items: center;
+
+.intro-details p {
+    margin: 20px;
+    font-size: 1.5rem;
+    width: 50%;
+    padding-right: 200px;
+    /* text-align: center; */
 }
-.imglocal img {
-  margin: 0 50px 20px 0;  
-  height: 560px;
-  padding-right: 30px;
-  border-radius: 20px;
-  opacity: 1;
+
+.intro-details img {
+  width: 650px;
 }
-#TextIntro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 0 50px 0 0;
-  width: 70%;
-}
-#TextIntro h2 {
+
+.intro-details span {
   text-decoration: underline;
-  font-size: 1.8rem;
-}
-.minititle {
-  font-weight: 700;
-  text-decoration: underline;
-}
-#TextIntro p {
-  font-size: 1.4rem;
-  width: 40%;
-}
-
-.button-about {
-  position: absolute;
-  left: 300px;
-  bottom: 70px;
-  background-color: #172A3A;
-  border-radius: 25px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.button-about a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.1rem;
-}
-
-.button-about i{
-  font-size: 1.5rem;
-}
-/* *************Actions************************* */
-
-#actions {
-  position: relative;
-  background-color: #fafafa;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.Texteprincipal2 {
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.Texteprincipal2 h2 {
-  color: #1894a5;
-  padding: 0 110px 0 0;
   font-weight: 600;
-  font-size: 1.9rem;
-  width: 70%;
-  /* text-decoration: underline; */
-  /* text-transform: uppercase; */
 }
 
+  /* *************************CARD-CONTAINER*************************** */
 
-.description-actions {
-  padding: 120px 110px 0 0;
-  width: 70%;
-  text-align: left;
-}
+  .card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* /* justify-content: space-between; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px dotted #ccc;
+    background-color: #f9f9f9; /* Fond légèrement plus clair */
+  }
 
-.description-actions h3 {
-  color: #333;
-  font-size: 1.3rem;
-  font-weight: 500;
-  line-height: 35px;
-}
+  .card h3 {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    text-align:center;
+    color: #35a3d1;
+  }
 
-.img-container img {
-  height: 580px;
-  margin-left:130px ;
-  border-radius: 20px;
-}
+  .card p {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 40px 0 0 40px;
+    width: 85%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
-.button-actions {
-  position: absolute;
-  right: 250px;
-  bottom: 80px;
-  background-color: #172A3A;
-  border-radius: 25px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  .one h3 {
+    margin-right: 90px;
+  }
+  .two {
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments pour les cartes paires */
+  }
+  
+  .two h3 {
+    color: #55BF7C;
+    margin-right: 70px;
+  }
 
-.button-actions a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.1rem;
-}
+  .three {
+    border: none;
+  }
 
-.button-actions i{
-  font-size: 1.5rem;
-}
+  .three h3 {
+    margin-right: 70px;
+  }
+  .reverse {
+    text-align: start;
+  }
+
+  .card img {
+    margin: 60px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: -3px 0px 9px 0px #00000075;
+  }
 
 
-/************FOOTER****************************/
-footer {
+  .card-content {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+
+  }
+  
+
+/* ************************FOOTER*********************** */
+
+
+  footer {
   background-color: #1f4261;
   color: whitesmoke;
   text-align: center;
@@ -321,9 +235,10 @@ footer h2 {
 .container-container {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 250px;
   margin-bottom: 30px;
   font-size: 1.2rem;
+  padding-top: 50px;
 }
 
 .container-container span {
@@ -338,19 +253,19 @@ footer h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3px;
+  gap: 5px;
 }
 
 .container-missions {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
 
 .container-sociaux {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
 
 #trait {
@@ -393,17 +308,24 @@ footer h2 {
 }
 
 /* ***************RESPONSIVE***************************************************************************** */
-@media (max-width: 990px) {
+@media (max-width: 1024px) {
   .main-navlinks {
     position: relative;
     overflow: visible;
+    background-color: #fff;
   }
+
+  .main-navlinks a {
+    font-size: large;
+    position: relative;
+  }
+
   #logo {
     margin: 10px auto;
   }
   #logo img {
-    width: 58px;
-    height: 46px;
+    width: 70px;
+    height: 60px;
   }
   #don {
     display: none;
@@ -422,25 +344,33 @@ footer h2 {
     margin: auto 15px;
   }
 
-  img {
-    width: 40px;
-    height: 40px;
+  .donate-button img {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
 
   .hamburger {
+    background-color: #fff;
     width: 20px;
     height: 20px;
     cursor: pointer;
     border: none;
     display: flex;
-    background: #dcdcce;
     align-items: center;
     position: relative;
     margin: auto 34px;
   }
 
-  .hamburger span {
+  .hamburger img {
+    height: 40px;
+    width: 50px;
+  }
+
+
+
+  /* Code pour rendre les span en forme de menu hamburger  */
+  /* .hamburger span {
     display: block;
     width: 100%;
     height: 2px;
@@ -459,7 +389,7 @@ footer h2 {
   }
   .hamburger span:nth-child(3) {
     transform: translateY(-7px);
-  }
+  } */
 
   .hamburger.open {
     display: none;
@@ -496,13 +426,6 @@ footer h2 {
     display: block;
   }
 
-  .main-navlinks {
-    background-color: #e9ecf0;
-  }
-  .main-navlinks a {
-    font-size: large;
-    position: relative;
-  }
 
   .container-links {
     display: flex;
@@ -551,6 +474,11 @@ footer h2 {
     opacity: 1;
   }
   /* Cette ligne permet de clicker sur la navbar et de passer son opacité à un lorsqu'elle est ouverte*/
+  
+  body.navbar-open #bouton {
+    z-index: -1;
+  }
+  /* Cette ligne ci-dessus permet de passer en arrière-plan le bouton "En savoir plus" durant l'affichage de la navBar */
 
   /* *****************************HOME-RESPONSIVE*********************************************** */
   #home h1 {
@@ -569,8 +497,104 @@ footer h2 {
   }
   /* Cette ligne ci-dessus permet de passer en arrière-plan le bouton "En savoir plus" durant l'affichage de la navBar */
 
-  /* *****************ABOUT-RESPONSIVE************************************ */
-  #TextIntro {
-    width: 70%;
+
+  /* **********************************INTRO-RESPONVISVE*************************** */
+
+
+ .intro-container {
+  height: 70vh;
+ } 
+
+ 
+ .intro-container h1 {
+   font-size: 1.8rem;
+   padding-top: 70px;
+   margin-left: 70px;
+  }
+  
+  .intro-details {
+    margin-left: 50px;
+  }
+  
+  .intro-details p {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .intro-details img {
+    width: 500px;
+    margin-right: 60px;
+  }
+  
+
+/* *****************INTRO-CONTAINER********************* */
+
+
+
+.card h3 {
+  font-size: 1.7rem;
+}
+.card p {
+  font-size: 1.2rem;
+  text-align: left;
+  width: 85%;
+  padding: 0;
+  margin:40px 50px 50px 10px;
+
+}
+
+  .card img {
+    width: 50%;
+    margin-left: 20px;
+
+  }
+
+  .one h3 {
+    margin-right: 125px; 
+  }
+
+  .two p{
+    margin-left: 50px;
+  }
+  .two h3 {
+    color: #55BF7C;
+    margin-right: 170px;
+}
+  .two img {
+  margin-right: 20px;
+}
+
+  .three h3 {
+    margin-right: 170px;
+  }
+
+  .three p {
+    margin-left: 10px;
+  }
+  /* **********************************FOOTER-RESPONSIVE************************************** */
+  
+  footer h2 {
+    font-weight: 600;
+  }
+  
+  .container-container {
+    padding-top: 50px;
+    gap: 120px;
+  }
+  
+  .container-container span {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .container-container a {
+    font-size: 1rem;
+  }
+  
+  #trait {
+    width: 90%;
   }
 }
+
+

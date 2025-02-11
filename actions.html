@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-actions.css">
+    <link rel="stylesheet" href="./CSS/styles-actions.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
     <title>Nos actions</title>
 </head>
 <body>
@@ -19,9 +21,7 @@
                 </div>
                 <li id="don"><a href="#" target="_blank">Faire un don</a></li>
                 <button type="button" class="hamburger" aria-label="Toggle Navigation" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <img src="./image/photos/burger-menu-svgrepo-com.svg" alt="Bouton du menu">
                 </button>
                 <a href="" class="close-button"></a>
                 <span class="donate-button">
@@ -30,39 +30,45 @@
             </ul>
             
         </nav>
-        <div class="Intro">
-            <h2>
-            Les actions de l'association
-        </h2>
-        <p>
-            Notre association agit chaque jour pour apporter un soutien concret et solidaire aux personnes les plus vulnérables. Face à la précarité qui touche de nombreuses familles, étudiants, personnes sans-abri et isolées, nous avons développé plusieurs actions essentielles.
-        </p>
-        </div>
-        
 
     </header>
     
+    <section class="intro-container">
+        <h1 class="title-actions">
+            Un engagement quotidien pour lutter <span>contre l’exclusion et la précarité</span>        
+        </h1>
+        <div class="intro-details">
+        <p>
+            Notre association agit <span>chaque jour pour apporter un soutien concret et solidaire aux personnes les plus vulnérables</span>. Face à la précarité qui touche de nombreuses familles, étudiants, personnes sans-abri et isolées, nous avons développé plusieurs actions essentielles.
+        </p>
+        <img src="./image/photos/fille-homeless.jpg" alt="petite fille pauvre">
+        </div>
+    </section>
+    
 
     <section class="actions-container">
-        <div class="card">
+        <div class="card one">
             <img src="./image/photos/slums-2635238_1280.jpg" alt="colis alimentaire">
             <div class="card-content">
                 <h3>Denrées alimentaire</h3>
                 <p>Nous préparons et distribuons des colis alimentaires adaptés aux besoins spécifiques des bénéficiaires. Chaque colis est composé de produits de première nécessité : aliments de base, produits frais, conserves, et parfois des gourmandises pour offrir un peu de réconfort. Grâce à nos partenaires et aux dons, nous veillons à garantir la diversité et la qualité des denrées distribuées.</p>
             </div>
         </div>
-        <div class="card">
+        <div class="card two">
             <img src="./image/photos/hand-disinfection-4954840_1280.jpg" alt="colis alimentaire">
             <div class="card-content">
                 <h3>Kit d'hygiène</h3>
                 <p class="reverse">La dignité passe aussi par l'accès à l'hygiène. Nos colis contiennent des produits essentiels tels que du savon, du shampoing, des protections périodiques, des brosses à dents, du dentifrice, et d'autres articles indispensables au quotidien. Ces kits visent à redonner confiance et estime de soi aux bénéficiaires.</p>
             </div>
         </div>
-        <div class="card">
+        <div class="card three">
             <img src="./image/photos/vetements.jpg" alt="colis alimentaire">
             <div class="card-content">
                 <h3>Don de vêtement</h3>
-                <p>Nos équipes de bénévoles organisent régulièrement des maraudes pour aller à la rencontre des personnes sans domicile fixe. Lors de ces tournées, nous distribuons des repas chauds, des boissons, des couvertures et des vêtements adaptés aux saisons. Mais plus qu’une aide matérielle, ces maraudes sont un moment d’échange, d’écoute et de partage, offrant une présence humaine essentielle à ceux qui se sentent isolés.</p>
+                <!-- <p>Nos équipes de bénévoles organisent régulièrement des maraudes pour aller à la rencontre des personnes sans domicile fixe. Lors de ces tournées, nous distribuons des repas chauds, des boissons, des couvertures et des vêtements adaptés aux saisons. Mais plus qu’une aide matérielle, ces maraudes sont un moment d’échange, d’écoute et de partage, offrant une présence humaine essentielle à ceux qui se sentent isolés.</p> 
+                 Texte à utiliser pour les maraudes si on doit les inclure dans le site--> 
+                 <p>
+                    Notre association collecte et distribue des vêtements pour offrir chaleur et dignité à ceux qui en ont besoin. Grâce aux dons, nous pouvons répondre aux urgences et accompagner les plus vulnérables en leur fournissant des habits adaptés à chaque saison. Chaque contribution permet d’apporter réconfort et espoir.</p>
             </div>
         </div>
     </section>
@@ -70,7 +76,7 @@
     
 
     <footer>
-        <h2>Nos informations</h2>
+        <!-- <h2>Nos informations</h2> -->
         <div class="container-container">
             <div class="container-site">
                 <span>Le site</span>
@@ -114,6 +120,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="script.js"></script>
+
 </body>
 </html>
